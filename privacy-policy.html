@@ -54,33 +54,51 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p><strong>Last Updated: May 21, 2026</strong></p>
-        
+        <p><strong>Last Updated: October 13, 2026</strong></p>
+
         <p>This privacy policy applies to the <strong>IC Lens</strong> mobile application (hereinafter referred to as the "Application") for mobile devices, created and maintained as a commercial service.</p>
+
+        <p>In short: the Application has no user accounts and contains no advertising, analytics or crash-reporting SDKs. To identify a component it sends the component's markings (text) and, for AI features, a photo of the component to the services listed below. Your scan history stays on your device.</p>
+
         <h2>1. Information Collection and Use</h2>
-        <p>The Application collects and processes information to provide, maintain, and improve the service. This includes:</p>
         <ul>
-            <li><strong>Camera Access:</strong> The Application requires permission to use your device's camera to scan components, perform optical character recognition (OCR), and capture images for analysis. Captured images are processed to extract text.</li>
-            <li><strong>Local Storage:</strong> Scanned history, favorites, and user settings are stored locally on your device.</li>
-            <li><strong>Network Data:</strong> The Application communicates with servers over the internet to perform component searches and retrieve datasheet information.</li>
+            <li><strong>Camera and photos:</strong> The Application uses your device's camera (or an image you pick from your gallery) to photograph electronic components. Text on the component is read on your device using on-device optical character recognition (Google ML Kit); this step does not send the photo anywhere.</li>
+            <li><strong>Component searches:</strong> The marking text you search for (for example "NE555P") is sent to our search service, which looks it up in the Mouser Electronics catalog and in our own index of the LCSC/JLCPCB parts catalog. Product photos shown in the results are delivered through the same service.</li>
+            <li><strong>AI analysis:</strong> When you use AI Analysis, the photo of the component (and/or its marking text) is sent to Google's Gemini AI to identify the component. After a search based on a photo, the Application may also send that photo and the part number to Gemini to find a link to the component's datasheet.</li>
+            <li><strong>Datasheets:</strong> Opening or downloading a datasheet loads the document directly from the manufacturer's or distributor's website (for example Texas Instruments, Mouser, JLCPCB/LCSC or Alldatasheet).</li>
+            <li><strong>App integrity checks:</strong> To protect our services from abuse, the Application uses Firebase App Check with Google Play Integrity, which lets Google confirm that requests come from a genuine copy of the Application installed from Google Play.</li>
+            <li><strong>Purchases:</strong> Premium subscriptions are processed by Google Play. We do not receive your payment details.</li>
+            <li><strong>Local storage:</strong> Scan history, favorites, downloaded datasheets and settings are stored locally on your device.</li>
         </ul>
+        <p>We do not use this information to identify you, build profiles, or show advertising, and we do not sell it.</p>
+
         <h2>2. Third-Party Services</h2>
-        <p>The Application utilizes third-party services that may collect information used to identify you. Below are links to the privacy policies of the third-party service providers used by the Application:</p>
+        <p>The Application relies on the following service providers, which process data as described above under their own privacy policies:</p>
         <ul>
-            <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
-            <li><a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener noreferrer">Google Play Billing Client</a> (for managing premium subscriptions)</li>
-            <li><a href="https://ai.google.dev/terms" target="_blank" rel="noopener noreferrer">Google Gemini API / AI Services</a> (for datasheet and PDF link analysis)</li>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services, Google Play Billing and Google Play Integrity</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Firebase</a> (App Check, Firebase AI Logic, and app configuration in Cloud Firestore)</li>
+            <li><a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Google Gemini API</a> (AI identification of components and datasheet links). The Application may use the Gemini API's free tier, under which Google may use submitted content, such as component photos, to improve its products.</li>
+            <li><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare</a> (hosts our search service)</li>
+            <li><a href="https://www.mouser.com/privacy/" target="_blank" rel="noopener noreferrer">Mouser Electronics</a> (receives the searched marking text from our search service; provides part data and photos)</li>
+            <li><a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener noreferrer">Google ML Kit</a> (on-device text recognition)</li>
         </ul>
+        <p>Please do not photograph documents, people or other personal information with the Application; only photos of electronic components are needed.</p>
+
         <h2>3. Data Retention</h2>
-        <p>Any scan history or favorite components you save are kept locally on your device. We do not host databases containing your personal images or private scan history on our servers. You can clear your local data at any time by clearing the Application's cache or uninstalling the Application.</p>
+        <p>Your scan history, favorites and downloaded datasheets are kept only on your device; you can delete them in the Application or by clearing the Application's data or uninstalling it. Our search service does not store your photos and keeps no record of who searched for what; it temporarily caches search results (keyed only by the searched marking text) for up to 24 hours to answer repeated searches faster. Data processed by the third-party services above is retained according to their own policies.</p>
+
         <h2>4. Security</h2>
-        <p>We value your trust in providing us your information, and we strive to use commercially acceptable means of protecting it. However, please remember that no method of transmission over the internet, or method of electronic storage, is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+        <p>Connections to our services use encryption (HTTPS), and our search and AI services accept requests only from genuine copies of the Application verified through Firebase App Check. However, no method of transmission over the internet, or method of electronic storage, is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+
         <h2>5. Children's Privacy</h2>
         <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we will immediately delete this from our records.</p>
+
         <h2>6. Changes to This Privacy Policy</h2>
         <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
         <h2>7. Contact Us</h2>
         <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact us at: <a href="mailto:maxikaz2020@gmail.com">maxikaz2020@gmail.com</a>.</p>
+
         <div class="footer">
             <p>&copy; 2026 IC Lens. All rights reserved.</p>
         </div>
